@@ -1,6 +1,7 @@
 # 加载JSON翻译文件
 import json
 import os
+import streamlit as st
 
 # 获取当前脚本的绝对路径
 script_path = os.path.abspath(__file__)
@@ -28,7 +29,11 @@ def load_translations(lang):
 
 # 获取翻译
 def tr(key, lang=LANG):
-    translations = load_translations(lang)
+    if 'ui_language' in st.session_state:
+        lang_ = st.session_state['ui_language'].split(" - ")[0].strip()
+    else:
+        lang_ = lang
+    translations = load_translations(lang_)
     return translations.get(key, key)  # 如果找不到翻译，就返回原字符串
 
 def main():

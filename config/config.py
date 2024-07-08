@@ -3,8 +3,8 @@ import shutil
 
 from tools.file_utils import read_yaml, save_yaml
 
-languages = {'zh-CN': "简体中文", 'en': "english", 'zh-TW': "繁體中文"}
-audio_languages = {'zh-CN': "中文", 'en-US': "english"}
+languages = {'zh-CN': "简体中文", 'en': "english", 'zh-TW': "繁體中文", 'ja-JP': "日本語"}
+audio_languages = {'zh-CN': "中文", 'en-US': "english", 'ja-JP': "日本語"}
 audio_voices_tencent = {
     "zh-CN": {
         "1001": "智瑜(女)",
@@ -87,6 +87,14 @@ audio_voices_azure = {
         "zh-CN-XiaoyuMultilingualNeural": "晓雨(女),多语言",
         "zh-CN-YunjieNeural": "云杰(男)",
         "zh-CN-YunyiMultilingualNeural": "云逸(男),多语言"
+    },
+    "ja-JP": {
+        "ja-JP-AoiNeural": "葵 (女性)",
+        "ja-JP-HarukaNeural": "春香 (女性)",
+        "ja-JP-NanamiNeural": "七海 (女性)",
+        "ja-JP-KeitaNeural": "圭太 (男性)",
+        "ja-JP-KazukiNeural": "和樹 (男性)",
+        "ja-JP-ShioriNeural": "栞 (女性)"
     },
     "en-US": {
         "en-US-AvaMultilingualNeural": "Ava(female)",

@@ -17,8 +17,8 @@ def init_driver():
         debugger_address = debugger_address
         # 创建Chrome选项，重用现有的浏览器实例
         options = selenium.webdriver.chrome.options.Options()
-        options.page_load_strategy = 'normal'  # 设置页面加载策略为'normal' 默认值, 等待所有资源下载,
-        options.add_experimental_option('debuggerAddress', debugger_address)
+        #options.page_load_strategy = 'normal'  # 设置页面加载策略为'normal' 默认值, 等待所有资源下载,
+        #options.add_experimental_option('debuggerAddress', debugger_address)
         # 使用服务和选项初始化WebDriver
         driver = webdriver.Chrome(service=service, options=options)
         return driver
@@ -50,6 +50,23 @@ def start_all_pages():
     # 在需要的时候关闭浏览器，不要关闭浏览器进程
     driver.quit()
 
+def start_tiktok_pages():
+    driver = init_driver()
+    start_page('https://www.tiktok.com/@it5632', driver)
+    # 在需要的时候关闭浏览器，不要关闭浏览器进程
+    #driver.quit()
+
+def start_youtube_pages():
+    driver = init_driver()
+    start_page('https://studio.youtube.com/channel/UCy28FFkDZcS9ZFfnsDb1g2Q/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D', driver)
+    # 在需要的时候关闭浏览器，不要关闭浏览器进程
+    #driver.quit()
+
+def start_xiaohongshu_pages():
+    driver = init_driver()
+    start_page('https://studio.youtube.com/channel/UCy28FFkDZcS9ZFfnsDb1g2Q/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D', driver)
+    # 在需要的时候关闭浏览器，不要关闭浏览器进程
+    #driver.quit()
 
 if __name__ == '__main__':
     start_all_pages()

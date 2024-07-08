@@ -4,7 +4,7 @@ import streamlit as st
 
 from config.config import driver_types
 from pages.common import common_ui
-from services.publish.open_test import start_all_pages
+from services.publish.open_test import start_all_pages,start_tiktok_pages,start_youtube_pages,start_xiaohongshu_pages
 from tools.tr_utils import tr
 
 # 获取当前脚本的绝对路径
@@ -21,9 +21,14 @@ def test_publish_video():
     start_all_pages()
 
 
-def start_publish_video():
-    pass
+def start_publish_tiktok():
+    start_tiktok_pages()
 
+def start_publish_youtube():
+    start_youtube_pages()
+
+def start_publish_xiaohongshu():
+    start_xiaohongshu_pages()
 
 common_ui()
 
@@ -48,7 +53,19 @@ with video_container:
     st.text_input(label=tr("Video Content Dir"), key="video_publish_content_dir")
 
 
-st.warning(tr("Click the test button, one new page will be opened, if not, that means your config has some error."))
-st.button(label=tr("Test Publish"), type="primary", on_click=test_publish_video)
-st.warning(tr("Make sure your env is ready, before start publish"))
-st.button(label=tr("Start Publish"), type="primary", on_click=start_publish_video)
+video_container = st.container(border=True)
+with video_container:
+    st.warning(tr("Click the test button, one new page will be opened, if not, that means your config has some error."))
+    st.button(label=tr("Test Publish"), type="primary", on_click=test_publish_video)
+
+video_container = st.container(border=True)
+with video_container:
+    st.warning(tr("Make sure your env is ready, before start publish"))
+    st.subheader(tr("Video Publish"))
+    llm_columns = st.columns(3)
+    with llm_columns[0]:
+        st.button(label=tr("tiktok"), type="primary", on_click=start_publish_tiktok)
+    with llm_columns[1]:
+        st.button(label=tr("youtube"), type="primary", on_click=start_publish_youtube)
+    with llm_columns[2]:
+        st.button(label=tr("xiaohongshu"), type="primary", on_click=start_publish_xiaohongshu)
