@@ -97,6 +97,25 @@
     "Download the driver from https://github.com/mozilla/geckodriver/releases": "https://github.com/mozilla/geckodriver/releases からドライバをダウンロード",
     "Test Publish": "環境テスト",
     "Click the test button, one new page will be opened, if not, that means your config has some error.": "テストボタンをクリックすると、新しいページが開きます。開かない場合は設定にエラーがあります",
-    "Make sure your env is ready, before start publish": "公開を開始する前に、設定が正しいことを確認してください"
+    "Make sure your env is ready, before start publish": "公開を開始する前に、設定が正しいことを確認してください",
+    "Video Site Config": "ビデオサイト設定",
+    "Use Common Config": "共通設定を使用",
+    "Title Prefix": "タイトルプレフィックス",
+    "Collection Name": "コレクション名",
+    "Douyin Config": "抖音設定",
+    "Kuaishou Config": "快手設定",
+    "shipinhao Config": "视频号設定",
+    "Xiaohongshu Config": "小紅書設定",
+    "Enable douyin": "抖音を有効にするか",
+    "Enable kuaishou": "快手を有効にするか",
+    "Enable shipinhao": "视频号を有効にするか",
+    "Enable xiaohongshu": "小紅書を有効にするか",
+    "Enable kuaishou domain": "快手のドメインを設定するか",
+    "Domain Level1": "一次ドメイン",
+    "Domain Level2": "二次ドメイン",
+    "Auto Publish": "自動公開するか",
+    "Tags": "ビデオタグ",
+    "Video File": "ビデオファイル",
+    "Text File": "テキストファイル"    
   }
   

@@ -97,6 +97,25 @@
     "Download the driver from https://github.com/mozilla/geckodriver/releases": "Download the driver from https://github.com/mozilla/geckodriver/releases",
     "Test Publish": "Test Publish",
     "Click the test button, one new page will be opened, if not, that means your config has some error.": "Click the test button, one new page will be opened, if not, that means your config has some error.",
-    "Make sure your env is ready, before start publish": "Make sure your env is ready, before start publish"
+    "Make sure your env is ready, before start publish": "Make sure your env is ready, before start publish",
+    "Video Site Config": "Video Site Config",
+    "Use Common Config": "Use Common Config",
+    "Title Prefix": "Title Prefix",
+    "Collection Name": "Collection Name",
+    "Douyin Config": "Douyin Config",
+    "Kuaishou Config": "Kuaishou Config",
+    "shipinhao Config": "shipinhao Config",
+    "Xiaohongshu Config": "Xiaohongshu Config",
+    "Enable douyin": "Enable Douyin",
+    "Enable kuaishou": "Enable Kuaishou",
+    "Enable shipinhao": "Enable shipinhao",
+    "Enable xiaohongshu": "Enable Xiaohongshu",
+    "Enable kuaishou domain": "Enable Kuaishou Domain",
+    "Domain Level1": "Domain Level 1",
+    "Domain Level2": "Domain Level 2",
+    "Auto Publish": "Auto Publish",
+    "Tags": "Video Tags",
+    "Video File": "Video File",
+    "Text File": "Text File"
   }
   

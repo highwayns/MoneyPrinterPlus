@@ -97,6 +97,25 @@
     "Download the driver from https://github.com/mozilla/geckodriver/releases": "從 https://github.com/mozilla/geckodriver/releases 下載驅動",
     "Test Publish": "環境檢測",
     "Click the test button, one new page will be opened, if not, that means your config has some error.": "點擊測試按鈕,會打開一個新頁面,如果頁面沒有打開,說明你的配置有錯誤",
-    "Make sure your env is ready, before start publish": "在發佈前,確保你的配置是正確的"
+    "Make sure your env is ready, before start publish": "在發佈前,確保你的配置是正確的",
+    "Video Site Config": "視頻網站配置",
+    "Use Common Config": "使用通用配置",
+    "Title Prefix": "標題前綴",
+    "Collection Name": "合集名稱",
+    "Douyin Config": "抖音配置",
+    "Kuaishou Config": "快手配置",
+    "shipinhao Config": "視頻號配置",
+    "Xiaohongshu Config": "小紅書配置",
+    "Enable douyin": "是否開啟抖音",
+    "Enable kuaishou": "是否開啟快手",
+    "Enable shipinhao": "是否開啟視頻號",
+    "Enable xiaohongshu": "是否開啟小紅書",
+    "Enable kuaishou domain": "是否設置快手領域",
+    "Domain Level1": "一級領域",
+    "Domain Level2": "二級領域",
+    "Auto Publish": "是否自動發佈",
+    "Tags": "視頻標籤",
+    "Video File": "視頻文件",
+    "Text File": "文本文件"    
   }
   
