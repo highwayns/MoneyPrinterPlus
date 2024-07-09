@@ -8,7 +8,7 @@ import time
 
 # 替换为你的YouTube账号信息
 youtube_email = "tei952@gmail.com"
-youtube_password = "xueqing1915"
+youtube_password = "#"
 video_path = "/home/tei952/theagentsdomain/10.AnalysisAndAlgorithm/MoneyPrinterPlus/final/final-1720318142978.mp4"
 video_title = "大屏幕的用途"
 video_description = "大屏幕可以用于教育培训，广告直播，小组协作，家庭娱乐等"
