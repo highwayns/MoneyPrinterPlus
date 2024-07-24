@@ -28,7 +28,10 @@ def publish_to_platform(platform, driver, video_file, text_file):
     发布到指定平台的封装函数
     """
     try:
-        globals()[platform + '_publisher'](driver, video_file, text_file)  # 动态调用对应平台的发布函数
+        while True:
+            ret = globals()[platform + '_publisher'](driver, video_file, text_file)  # 动态调用对应平台的发布函数
+            if ret : 
+                break
     except Exception as e:
         print(platform, "got error")
         traceback.print_exc()  # 打印完整的异常跟踪信息

@@ -5,15 +5,17 @@ from selenium import webdriver
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import streamlit as st
-
 import time
-
 from config.config import douyin_site
 from tools.file_utils import read_head, read_file_with_extra_enter
+import logging
 
 
 def douyin_publisher(driver, video_file, text_file):
+
+    ret = False
 
     # driver.switch_to.window(driver.window_handles[0])
 
@@ -22,15 +24,15 @@ def douyin_publisher(driver, video_file, text_file):
 
     # 浏览器实例现在可以被重用，进行你的自动化操作
     driver.get(douyin_site)
-    time.sleep(2)  # 等待2秒
+    time.sleep(200)  # 等待2秒
 
     # 设置等待
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 30)
 
     # 上传视频按钮
     file_input = driver.find_element(By.NAME,'upload-btn')
     file_input.send_keys(video_file)
-    time.sleep(10)  # 等待
+    time.sleep(1000)  # 等待
     # 等待视频上传完毕
     # wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'semi-input semi-input-default')))
 
@@ -105,10 +107,20 @@ def douyin_publisher(driver, video_file, text_file):
 
     # 发布
     publish_button = driver.find_element(By.XPATH, '//button[text()="发布"]')
-    auto_publish = st.session_state.get('video_publish_auto_publish')
-    if auto_publish:
-        print("auto publish")
-        publish_button.click()
+    
+    auto_publish = True
+    # st.session_state.get('video_publish_auto_publish')
+    # if auto_publish:
+    #     logging.info("auto publish")
+    #     print("auto publish")
+    publish_button.click()
+    #     logging.info("Clicked publish button")
+
+
+    ret = True
+    
+    return ret
+
 
 
 
